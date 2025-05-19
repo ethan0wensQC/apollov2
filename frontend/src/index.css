@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +15,7 @@ body {
 html {
   background: #f2f2f2;
   font-family:
+  'Outfit',
     'Segoe UI',
     'Segoe UI Web (West European)',
     'Segoe UI',
