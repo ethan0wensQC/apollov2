@@ -4,7 +4,7 @@
   align-items: flex-start;
   padding: 8.1285px;
   gap: 5.42px;
-  background: #ffffff;
+  background: #282359;
   box-shadow:
     0px 1px 2px rgba(0, 0, 0, 0.14),
     0px 0px 2px rgba(0, 0, 0, 0.12);
@@ -16,7 +16,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #323130;
+  color: #ffffff;
   flex: none;
   order: 1;
   align-self: stretch;
@@ -49,13 +49,13 @@
 .answerDisclaimer {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 16px;
 
   display: flex;
   align-items: center;
   text-align: center;
-  color: #707070;
+  color: #bdbdbd;
   flex: none;
   order: 1;
   flex-grow: 0;

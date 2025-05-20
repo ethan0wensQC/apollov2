@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: radial-gradient(108.78% 108.78% at 50.02% 19.78%, #ffffff 57.29%, #eef6fe 100%);
+  background: radial-gradient(108.78% 108.78% at 50.02% 19.78%, #ffffff 57.29%, #bbbaba 100%);
   box-shadow:
     0px 2px 4px rgba(0, 0, 0, 0.14),
     0px 0px 2px rgba(0, 0, 0, 0.12);
@@ -59,6 +59,22 @@
   text-align: center;
   letter-spacing: -0.01em;
   color: #cf0468;
+  overflow: hidden;
+  border-right: 0.13em solid #cf0468;  /* The caret */
+  white-space: nowrap;
+  animation: typing 2.5s steps(26, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation: width goes from 0 to full text width */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 18ch } /* <-- Adjust '22ch' to match your text's length */
+}
+
+/* Blinking caret */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #cf0468; }
 }
 
 .chatIcon {
@@ -88,7 +104,7 @@
   position: relative;
   display: flex;
   padding: 20px;
-  background: #edf5fd;
+  background: #cf0468 ;
   border-radius: 8px;
   box-shadow:
     0px 2px 4px rgba(0, 0, 0, 0.14),
@@ -97,7 +113,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #242424;
+  color: #fffefe;
   order: 0;
   flex-grow: 0;
   white-space: pre-wrap;
