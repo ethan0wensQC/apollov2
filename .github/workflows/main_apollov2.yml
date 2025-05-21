@@ -27,16 +27,11 @@ jobs:
           npm run build
           cd ..
 
-      - name: List frontend directory after build
-        run: ls -R frontend
+   
 
 
-      # If using a Python backend in /backend, set this path accordingly
-      # Move frontend build into backend or root static folder (adapt as needed)
-      - name: Copy frontend build to backend static folder
-        run: |
-          mkdir -p static
-          cp -r frontend/static/* static/
+     
+     
 
       # Set up Python
       - name: Set up Python version
