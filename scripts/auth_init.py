@@ -33,7 +33,7 @@ def create_application(credential):
             "displayName": "WebApp",
             "signInAudience": "AzureADandPersonalMicrosoftAccount",
             "web": {
-                "redirectUris": ["http://localhost:5000/.auth/login/aad/callback"],
+                "redirectUris": ["http://localhost:5000/.auth/login/aad/callback", "https://apollov2-chesg4cmczane2cy.uksouth-01.azurewebsites.net/.auth/login/add/callback" ],
                 "implicitGrantSettings": {"enableIdTokenIssuance": True},
             },
         },

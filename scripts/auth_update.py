@@ -16,6 +16,7 @@ def update_redirect_uris(credential, app_id, uri):
             "web": {
                 "redirectUris": [
                     "http://localhost:5000/.auth/login/aad/callback",
+                    "https://apollov2-chesg4cmczane2cy.uksouth-01.azurewebsites.net/.auth/login/add/callback",
                     f"{uri}/.auth/login/aad/callback",
                 ]
             }
