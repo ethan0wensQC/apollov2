@@ -31,9 +31,8 @@ jobs:
       # Move frontend build into backend or root static folder (adapt as needed)
       - name: Copy frontend build to backend static folder
         run: |
-          rm -rf backend/static
-          mkdir -p backend/static
-          cp -r static/* backend/static/
+          mkdir -p static
+          cp -r frontend/static/* static/
 
       # Set up Python
       - name: Set up Python version
@@ -49,8 +48,7 @@ jobs:
       # Zip everything for deployment
       - name: Zip artifact for deployment
         run: |
-          cd backend
-          zip -r ../release.zip .
+          zip -r release.zip . -x "frontend/*" ".git/*"
           cd ..
 
       - name: Upload artifact for deployment jobs
